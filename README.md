@@ -1,21 +1,11 @@
-# potency-calculator
-Trabajo unal punto 4 
-"""
- Calcular la potencia de un numero en Python usando el ciclo While, sin usar el Pow
+# se ocupa poner el float para convertir el string introducido
+base = float(raw_input('Ingrese base:  '))
+exponente = float(raw_input('Ingrese exponente:  '))
+potencia=1;
 
-"""
-def potencia(numero, exponente):
-     contador = 1
-     elevado = 1
-     
-     while contador <= exponente:
-    elevado = elevado * numero
-    contador = contador + 1
+while(exponente>0): 
+         potencia = potencia*base;
+         exponente=exponente-1;
 
- return elevado
 
-"""
-
-Probar
-"""
-print(potencia(2, 3))
+print 'Potencia :',potencia
