@@ -14,4 +14,8 @@ def potencia(numero, exponente):
 
  return elevado
 
-"
+"""
+
+Probar
+"""
+print(potencia(2, 3))
